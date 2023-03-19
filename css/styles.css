@@ -99,7 +99,7 @@ p {
 .header {
     min-height: 100vh;
     position: relative;
-    background: url("../images/main-bcg.jpeg") center/cover no-repeat fixed;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../images/main-bcg.jpeg") center/cover no-repeat fixed;
 }
 
 .banner {
@@ -108,5 +108,43 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.banner h2 {
+    color: var(--clr-primary);
+    font-family: var(--ff-secondary);
+}
+
+.banner h1 {
+    text-transform: uppercase;
+    color: var(--clr-white);
+    margin-top: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.banner-btn {
+    outline: 0.125rem solid var(--clr-primary);
+    outline-offset: 0.25rem;
+    font-size: 1.25rem;
+    padding: 1rem 1.7rem;
+}
+
+.btn {
+    text-transform: capitalize;
+    color: var(--clr-white);
+    padding: 0.75rem 1rem;
+    background: var(--clr-primary);
+    letter-spacing: var(--spacing);
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    transition: var(--transition);
+}
+
+.btn:hover {
+    color: var(--clr-primary);
+    background: var(--clr-primary-light);
 }
 
