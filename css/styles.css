@@ -153,6 +153,12 @@ p {
     background: var(--clr-primary-light);
 }
 
+.clearfix::after, .clearfix::before {
+    content: '';
+    clear: both;
+    display: table;
+}
+
 .skills {
     background: var(--clr-grey-10);
 }
@@ -184,4 +190,18 @@ p {
 
 .skill:hover .skill-icon {
     transform: translateY(-5px);
+}
+
+@media screen and (min-width: 576px){
+    .skill {
+        width: 50%;
+        float: left;
+    }
+    
+}
+
+@media screen and (min-width:1200px) {
+    .skill {
+        width: 25%;
+    }
 }
